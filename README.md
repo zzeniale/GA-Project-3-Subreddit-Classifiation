@@ -8,12 +8,7 @@ In this project, I examined posts from two subreddits - [**r/Singapore**](https:
 ---
 <img src="./graphics/wordcloud_title.jpg" width=800 align = center>
 
-<center><font size=2 color='grey'>(The most common phrases on r/Singapore and r/Malaysia, as of 22 October 2019.)</font></center>
-
-Use html <style=”color:green;”> attribute to change text color.
-Use html <style=”font-size:250%;”> attribute to change text size.
-Use html <syle=”font-family:Arial;”> attribute to change text font.
-Use html <style=”text-align:center;”> attribute to set text alignment.
+<font size=2 color='grey'>(The most common phrases on r/Singapore and r/Malaysia, as of 22 October 2019.)</font>
 
 To answer these questions, I developed a word-frequency based classification model to predict the subreddit that a random post belongs to. A variety of preliminary models were tested and evaluated based on prediction accuracy, i.e. how many posts they were able to correctly classify. The final production model was a multinomial naive Bayes classifier that makes predictions based on title content and post lengths, with an accuracy of 71%. This shows that the posts in r/Malaysia and r/Singapore are fairly different, but still have a good amount of similarities. The differences may mainly be due to differences in current affairs in Singapore and Malaysia. It is therefore not surprising that the two subreddits are somewhat distinguishable from each other, as the current affair topics in different countries will undoubtedly be different. The similarities behind the model misclassifications may be due to more generic, day-to-day topics such as people asking for help or life advice, which are likely to be similar between the two countries.
 
